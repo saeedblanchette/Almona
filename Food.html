@@ -8,7 +8,80 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
+<style>
+  @font-face {
+    font-family: 'made_mirage';
+    src: url('./fonts/MADE Mirage Thin PERSONAL USE.otf') format('opentype');
+    font-weight: Thin;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'made_mirage';
+    src: url('./fonts/MADE Mirage Regular PERSONAL USE.otf') format('opentype');
+    font-weight: Thin;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'made_mirage';
+    src: url('./fonts/MADE Mirage Black PERSONAL USE.otf') format('opentype');
+    font-weight: Thin;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'made_mirage';
+    src: url('./fonts/MADE Mirage Black PERSONAL USE.otf') format('opentype');
+    font-weight: Thin;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gotham_book';
+    src: url('./fonts/gotham-book-58ecc4558a392.otf') format('opentype');
+    font-weight: Thin;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'gotham_book';
+    src: url('./fonts/gotham-book-58ecc4558a392.otf') format('opentype');
+    font-weight: Thin;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeue Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HelveticaNeue Light'), url('./fonts/Light.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'HelveticaNeue Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HelveticaNeue Heavy'), url('./fonts/HelveticaNeueHv.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HelveticaNeue Light'), url('./fonts/Light.woff') format('woff');
+    }
+
+    
+
+    @font-face {
+    font-family: 'HelveticaNeueUltraLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HelveticaNeueUltraLight'), url('./fonts/HelveticaNeueUltraLightv130.woff') format('woff');
+    }
+* {
+
+  font-family: 'HelveticaNeue' 
+}
+</style>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -28,9 +101,9 @@
  <header >
  
  </header>
-  <div class="relative w-full h-[50vh] bg-green-300">
-    <nav class="w-full  bg-transparent bg-opacity-0 absolute top-0 left-0 bg-green-300 z-[30]  ">
-    
+  <div class="relative w-full h-[550px]  bg-green-300">
+    <nav class="w-full  font-['gotham_book'] bg-transparent bg-opacity-0 absolute top-0 left-0 bg-green-300 z-[30]  ">
+  
       <div class="navbar mx-auto container bg-transparent bg-opacity-0  text-white w-full z-[30] " >
         <div class="navbar-start bg-transparent text-green">
           <div class="dropdown">
@@ -51,58 +124,55 @@
             <ul
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[30] mt-3 w-52 p-2 shadow text-gray-800">
-                 <li><a  href="./index.html">accueil </a></li>
+              <li><a  href="./index.html">Accueil </a></li>
               <li>
-                <a>nos univers </a>
+                <a>Nos univers </a>
                 <ul class="p-2 z-[30] ">
-                  <li><a href="./Food.html">food </a></li>
-                  <li><a href="./Naturels.html">naturels</a></li>
-                  <li><a  href="./Scent&Care.html">scent </a></li>
-                  <li><a href="./feed.html">care et feed</a></li>
-
+                  <li><a href="./Food.html">Food </a></li>
+                  <li><a href="./Naturels.html">Naturels</a></li>
+                  <li><a  href="./Scent&Care.html">Scent & Care</a></li>
+                  <li><a href="./feed.html"> Feed</a></li>
+  
                 </ul>
               </li>
-              <li><a a href="./Apropos.html">à propos</a></li>
-              <li><a href="#contact">contact</a></li>
+              <li><a a href="./Apropos.html">À propos</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
           <a class="btn btn-ghost text-xl"><img src='svgs/SmalLogo.svg' class="w-32 h-10"   /></a>
         </div>
-        <div class="navbar-center hidden lg:flex bg-transparent  ">
+        <div class="navbar-center hidden lg:flex bg-transparent ">
           <ul class="menu menu-horizontal px-1 ">
-               <li><a  href="./index.html">accueil </a></li>
+            <li><a  href="./index.html">Accueil </a></li>
             <li>
               <details>
-                <summary>nos univers</summary>
-                <ul class="p-2 z-[30] text-gray-800">
-                  <li><a href="./Food.html">food </a></li>
-                  <li><a href="./Naturels.html">naturels</a></li>
-                  <li><a  href="./Scent&Care.html">scent </a></li>
-                  <li><a href="./feed.html">care et feed</a></li>
-
+                <summary>Nos univers</summary>
+                <ul class="p-2 z-[30] text-gray-800 w-52 opacity-90 font-bold bg-[#ffffff8c] ">
+                  <li><a href="./Food.html">Food </a></li>
+                  <li><a href="./Naturels.html">Naturels</a></li>
+                  <li><a  href="./Scent&Care.html">Scent  & Care</a></li>
+                  <li><a href="./feed.html">Feed</a></li>
+  
                 </ul>
               </details>
             </li>
-            <li><a a href="./Apropos.html">à propos</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a a href="./Apropos.html">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="navbar-end bg-transparent ">
-          <a class=" border p-2 rounded-lg">Service client</a>
+          <a class=" border p-2 rounded-2xl px-8">Service client</a>
           <!-- <div class="ml-2"> Search </div> -->
         </div>
       </div>
     </nav>
     <div class="absolute inset-0 ">
-    <div class="  w-full h-[50vh]  ">
+    <div class="  w-full h-[550px]   ">
    
 
           <div class="swiper-slide   relative w-full h-full bg-red-700 ">
-            <img src="./images/Food/FoodHeader.jpg" class="w-full h-full inset-0   " />
-            <div class="flex items-center w-full h-full inset-0 absolute bg-[#1c261f47]   m-auto text-white absolute  font-bold  ">
-                <h3 class=" text-center m-auto text-4xl  inset-y-0   ">Food</h3>
-                
-            </div>
+            <img src="./images/HeadFood.png" class="w-full h-full inset-0   " />
+           
             
            
           </div>
@@ -127,7 +197,7 @@
   
     <div class="m-auto lg:w-3/5">
         <div class="m-auto  px-2 ">
-        <h1 class="text-4xl my-1 font-medium  lg:text-bold text-red-700 lg:font-extrabold">Arômes et Assaisonnements </h1>
+        <h1 class=" py-2 text-5xl my-1 font-medium  lg:text-bold text-[#DC0B2B] lg:font-extrabold font-['made_mirage']">Arômes et Assaisonnements </h1>
         <p class="lg:text-lg py-2">Vous trouverez chez nous tout ce qui concerne les arômes et les assaisonnements,
             des produits sains et de qualité supérieure, avec une large gamme d'options.</p>
         </div>
@@ -143,7 +213,7 @@
     <img  src="./images/Food/Jus.jpg" class="rounded-2xl"/>
   </div>
   <div class="m-auto text-right lg:w-3/5  px-2  ">
-    <h1 class="text-4xl my-1 font-medium text-red-700 lg:text-bold lg:font-extrabold">Émulsions et Compounds</h1>
+    <h1 class=" py-2 text-5xl my-1 font-medium text-[#DC0B2B] lg:text-bold lg:font-extrabold font-['made_mirage']">Émulsions et Compounds</h1>
     <p class="lg:text-lg py-2 ">Nous offrons une large gamme prête à l’emploi permettant à nos clients d’allier
         créativité, efficacité en production et amélioration de leurs produits finis.</p>
     
@@ -152,137 +222,221 @@
 
 
 </div>
-<div class="container  flex flex-col   lg:flex-row mx-auto py-2 lg:py-16 lg:my-8 lg:gap-16">
- 
-  <div class="m-auto  lg:w-3/5  px-2  ">
-    <h1 class="text-4xl my-1 font-medium text-red-700 lg:text-extrabold ">Mélanges Fonctionnels
-        pour la Charcuterie</h1>
-    <p class="lg:text-lg py-2  pr-6">Nous mettons à votre disposition un ensemble complet de saveurs,
-        d'assaisonnements et d'ingrédients pour optimiser
-        la qualité gustative de vos charcuteries.</p>
-    
-  </div>
-  <div class="h-66 w-full    lg:w-2/5  rounded-lg ">
-    <img  src="./images/Food/mortadelle.jpg" class=" rounded-2xl"/>
-  </div>
+  <div class="container  flex flex-col   lg:flex-row mx-auto py-2 lg:py-16 lg:my-8 lg:gap-16">
+  
+        <div class="m-auto  lg:w-3/5  px-2  ">
+          <h1 class=" py-2 text-5xl my-1 font-medium text-[#DC0B2B] lg:text-bold lg:font-extrabold font-['made_mirage']">Mélanges Fonctionnels
+              pour la Charcuterie</h1>
+          <p class="lg:text-lg py-2  pr-6">Nous mettons à votre disposition un ensemble complet de saveurs,
+              d'assaisonnements et d'ingrédients pour optimiser
+              la qualité gustative de vos charcuteries.</p>
+          
+        </div>
+        <div class="h-66 w-full    lg:w-2/5  rounded-lg ">
+          <img  src="./images/Food/mortadelle.jpg" class=" rounded-2xl"/>
+        </div>
 
 
-</div>
-<div class="container  flex flex-col   lg:flex-row mx-auto py-2 lg:py-16 lg:my-8 lg:gap-16">
-    <div class="h-66 w-full    lg:w-2/5  rounded-lg ">
-        <img  src="./images/Food/épices.jpg" class=" rounded-2xl w-full h-full"/>
+  </div>
+  <div class="container  flex flex-col-reverse   lg:flex-row mx-auto py-2 lg:py-16 lg:my-8 lg:gap-16 text-right">
+      <div class="h-66 w-full    lg:w-2/5  rounded-lg ">
+          <img  src="./images/Food/épices.jpg" class=" rounded-2xl w-full h-full"/>
       </div>
-    <div class="m-auto  lg:w-3/5  px-2  ">
-      <h1 class="text-4xl my-1 font-medium text-red-700 lg:text-extrabold ">Épices et Marinades</h1>
-      <p class="lg:text-lg py-2  pr-6">Nous proposons une sélection d’épices simples ou composés d’une
-        bonne qualité, ainsi que des marinades alimentaires riches en goûts,
-        en saveurs et en textures pour votre succès agroalimentaire.</p>
-      
-    </div>
+      <div class="m-auto  lg:w-3/5  px-2  ">
+        <h1 class=" py-2 text-5xl my-1 font-medium text-[#DC0B2B] lg:text-bold lg:font-extrabold font-['made_mirage']">Épices et Marinades</h1>
+        <p class="lg:text-lg py-2  pr-6">Nous proposons une sélection d’épices simples ou composés d’une
+          bonne qualité, ainsi que des marinades alimentaires riches en goûts,
+          en saveurs et en textures pour votre succès agroalimentaire.</p>
+        
+      </div>
    
   
   
   </div>
-<div>
-<div class="container m-auto    ">
-  <div class="flex m-auto   justify-center h-18     items-center">
-   <img src="svgs/CercleOrPh.svg" class="w-12 h-12 inline mx-2" />
-    <h3 class="text-2xl lg:text-4xl font-medium  text-center py-6 mx-2  ">NOS  DOMAINES  D'ACTIVITÉS
-    </h3>
-    <img src="svgs/4CerclesDomainesActivités.svg"  class="w-52 h-28 inline mx-2"  />
+  <div class="container  flex flex-col   lg:flex-row mx-auto py-2 lg:py-16 lg:my-8 lg:gap-16">
+  
+    <div class="m-auto  lg:w-3/5  px-2  ">
+      <h1 class=" py-2 text-5xl my-1 font-medium text-[#DC0B2B] lg:text-bold lg:font-extrabold font-['made_mirage']">Antioxydants
+        & Conservateurs</h1>
+      <p class="lg:text-lg py-2  pr-6">Nous fournissons des substances naturelles ou de synthèse, ajoutée aux aliments
+        pour améliorer leur conservation, sans aucune possibilité de développement
+        microbien. Nos produits ne présentent aucun risque pour les consommateurs.</p>
+      
+    </div>
+    <div class="h-66 w-full    lg:w-2/5  rounded-lg ">
+      <img  src="./images/Food/VhPdemi.jpg" class=" rounded-2xl"/>
+    </div>
+</div>
+<div class="container  flex flex-col-reverse   lg:flex-row mx-auto py-2 lg:py-16 lg:my-8 lg:gap-16 text-right">
+  <div class="h-66 w-full    lg:w-2/5  rounded-lg ">
+      <img  src="./images/Food/Jus.jpg" class=" rounded-2xl w-full h-full"/>
+  </div>
+  <div class="m-auto  lg:w-3/5  px-2  ">
+    <h1 class=" py-2 text-5xl my-1 font-medium text-[#DC0B2B] lg:text-bold lg:font-extrabold font-['made_mirage']">Fibres pour rétention d’eau</h1>
+    <p class="lg:text-lg py-2  pr-6">Nos produits offrent des propriétés élevées de rétention d'eau et d'émulsification
+      avec une sensation agréable en bouche. Ils améliorent la texture, la stabilité
+      et la nutrition d'une variété d'aliments et de boissons.</p>
     
   </div>
 
-  <div class="flex flex-col lg:flex-row justify-between py-6">
-    <div class="my-3 lg:mx-2 flex flex-col  ">
-      <div class="w-72 h-52  lg:my-2 m-auto">
-        <img src="./images/Food1.png" />
 
-      </div>
-      <a href="/Food.html" class="my-2 m-auto border border-2 py-2  px-8 w-32  rounded-xl mx-auto  border-red-500 shadow shadow-2xl">
-      découvrir</a>
 
-    </div>
-    <div class="my-3 lg:mx-2 flex flex-col  ">
-      <div class="w-72 h-52  lg:my-2 mx-auto ">
-        <img src="./images/Naturels1.png" />
-      </div>
-       <a href="./Naturels.html" class="my-2 m-auto border border-2 py-2  px-8 w-32  rounded-xl mx-auto  border-lime-700 shadow shadow-2x">
-        découvrir</a>
-
-    </div>
-    <div class="my-3 lg:mx-2 flex flex-col  ">
-      <div class="w-72 h-52  lg:my-2 mx-auto">
-        <img src="./images/S&C1.png" />
-      </div>
-      <a href="./Scent&Care.html"  class="my-2 m-auto border border-2 py-2  px-8 w-32  rounded-xl mx-auto  border-cyan-600 shadow shadow-2x">
-        découvrir</a>
-
-    </div>
-    <div class="my-3 lg:mx-2 flex flex-col  ">
-      <div class="w-72 h-52  lg:my-2 mx-auto">
-        <img src="./images/Feed1.png" />
-      </div>
-      <a href="feed.html"  class="my-2 m-auto border border-2 py-2  px-8 w-32  rounded-xl mx-auto  border-yellow-400 shadow shadow-2x">
-        découvrir</a>
-
-    </div>
+</div>
+<div class="container  flex flex-col   lg:flex-row mx-auto py-2 lg:py-16 lg:my-8 lg:gap-16">
+  
+  <div class="m-auto  lg:w-3/5  px-2  ">
+    <h1 class=" py-2 text-5xl my-1 font-medium text-[#DC0B2B] lg:text-bold lg:font-extrabold font-['made_mirage']">Graisses et Huiles végétales</h1>
+    <p class="lg:text-lg py-2  pr-6">Afin de satisfaire une demade toujours plus exigeante,
+      Almona s’est inscrit dans la diversification et dans l’innovation
+      de son offre en mettant à votre disposition un large choix de produits.</p>
+    
   </div>
+  <div class="h-66 w-full    lg:w-2/5  rounded-lg ">
+    <img  src="./images/Food/Huile.jpg" class=" rounded-2xl"/>
+  </div>
+</div>
+
+<div class="container  flex flex-col-reverse   lg:flex-row mx-auto py-2 lg:py-16 lg:my-8 lg:gap-16 text-right">
+  <div class="h-66 w-full    lg:w-2/5  rounded-lg ">
+      <img  src="./images/Food/PoudreOeuf.jpg" class=" rounded-2xl w-full h-full"/>
+  </div>
+  <div class="m-auto  lg:w-3/5  px-2  ">
+    <h1 class=" py-2 text-5xl my-1 font-medium text-[#DC0B2B] lg:text-bold lg:font-extrabold font-['made_mirage']">Oeufs en poudre</h1>
+    <p class="lg:text-lg py-2  pr-6">Nos produits conservent toutes les propriétés nutritionnelles
+      et fonctionnelles de l’œuf. Pasteurisées et garanties sans matière grasse
+      hydrogénée, nos poudres d'oeuf sont prêt à l’emploi et facile à utiliser.</p>
+    
+  </div>
+</div>
 
 </div>
+<div class="container  flex flex-col   lg:flex-row mx-auto py-2 lg:py-16 lg:my-8 lg:gap-16">
+  
+  <div class="m-auto  lg:w-3/5  px-2  ">
+    <h1 class=" py-2 text-5xl my-1 font-medium text-[#DC0B2B] lg:text-bold lg:font-extrabold font-['made_mirage']">Extrait de café
+      instantané</h1>
+    <p class="lg:text-lg py-2  pr-6">Pour vous garantir une qualité optimale, nos contenants d'extrait de café instantané
+      sont en verre ambré afin de protéger sa composition d'une éventuelle altération par
+      la lumière et pour garder tous les bienfaits qu'il possède et qu'il peut vous offrir.</p>
+    
+  </div>
+  <div class="h-66 w-full    lg:w-2/5  rounded-lg ">
+    <img  src="./images/Food/Café.jpg" class=" rounded-2xl"/>
+  </div>
 </div>
-<div class="pb-4 flex  flex-col relative pt-16 lg:px-16 lg:py-18    lg:relative h-[890px] overflow-hidden">
+
+
+<div class="container  flex flex-col-reverse   lg:flex-row mx-auto py-2 lg:py-16 lg:my-8 lg:gap-16 text-right">
+  <div class="h-66 w-full    lg:w-2/5  rounded-lg ">
+      <img  src="./images/Food/Cake.jpg" class=" rounded-2xl w-full h-full"/>
+  </div>
+  <div class="m-auto  lg:w-3/5  px-2  ">
+    <h1 class=" py-2 text-5xl my-1 font-medium text-[#DC0B2B] lg:text-bold lg:font-extrabold font-['made_mirage']">Poudre et
+      Beurre de cacao</h1>
+    <p class="lg:text-lg py-2  pr-6">Pour répondre à tous les besoins du marché et pour vous aider à optimiser le profil
+      nutritionnel de vos produits, Almona met à votre disposition une selection de poudre
+      et beurre de cacao de qualité, réputée pour sa saveur et sa richesse aromatique.</p>
+    
+  </div>
+</div>
+  <div>
+    <div class="container m-auto    ">
+      <div class="flex m-auto   justify-center h-18     items-center">
+       <img src="./svgs/CercleOrPh.svg" class="w-12 h-12 inline mx-2" />
+        <h3 class="text-2xl lg: py-2 text-5xl font-medium  text-center py-6 mx-2  font-['made_mirage']   ">NOS  DOMAINES  D'ACTIVITÉS
+        </h3>
+        <img src="svgs/4CerclesDomainesActivités.svg"  class="w-28 h-16 inline mx-2"  />
+      </div>
+    
+      <div class="flex flex-col lg:flex-row justify-between py-6">
+        <div class="my-3 lg:mx-2 flex flex-col  ">
+          <a  href="./Food.html" class="w-72 h-52  lg:my-2 m-auto">
+            <img src="./images/Food3.png" />
+    
+          </a>
+          <a href="./Food.html" class="my-2 m-auto border border-2 py-2  px-8 text-center w-36  rounded-3xl mx-auto  border-red-500 shadow shadow-2xl">
+          <span class="text-center m-auto">Découvrir </span></a>
+    
+        </div>
+        <div class="my-3 lg:mx-2 flex flex-col  ">
+          <a  href="./Naturels.html" class="w-72 h-52  lg:my-2 mx-auto ">
+            <img src="./images/Naturels3.png" />
+          </a>
+           <a href="./Naturels.html" class="my-2 m-auto border border-2 py-2  px-8 text-center w-36  rounded-3xl mx-auto  border-lime-700 shadow shadow-2x">
+            <span class="text-center m-auto">Découvrir </span></a>
+    
+        </div>
+        <div class="my-3 lg:mx-2 flex flex-col  ">
+          <a   href="./Scent&Care.html" class="w-72 h-52  lg:my-2 mx-auto">
+            <img src="./images/S&C3.png" />
+          </a>
+          <a href="./Scent&Care.html"  class="my-2 m-auto border border-2 py-2  px-8 text-center w-36  rounded-3xl mx-auto  border-cyan-600 shadow shadow-2x">
+            <span class="text-center m-auto">Découvrir </span></a>
+    
+        </div>
+        <div class="my-3 lg:mx-2 flex flex-col  ">
+          <a  href="./feed.html"  class="w-72 h-52  lg:my-2 mx-auto">
+            <img src="./images/Feed3.png" />
+          </a>
+          <a href="./feed.html"  class="my-2 m-auto border border-2 py-2  px-8 text-center w-36  rounded-3xl mx-auto  border-yellow-400 shadow shadow-2x">
+            <span class="text-center m-auto">Découvrir </span></a>
+    
+        </div>
+      </div>
+    
+    </div>
+    </div>
+    <div class="pb-4 flex  flex-col relative pt-16 lg:px-16 lg:py-18    lg:relative h-[890px] overflow-hidden">
      
-  <img  src=" https://placeholderimage.eu/api/monument/id/1/900/600" class="absolute w-full h-full inset-0  m-auto  z-2"/>
-  <div class="flex   lg:absolute  bg-[#0808086e] inset-0 m-auto w-full h-full  ">
-          <div class="absolute container m-auto w-full inset-0 flex flex-col  lg:flex-row py-18 my-16 z-8 ">
-                  <div class="m-auto px-2 flex flex-col lg:w-1/2 bg-grey-700 text-white">
-                        <div>
-
-                          <h4 class=" text-xl font-medium  py-2">Notre relation exceptionnelle commence ici,</h4>
-                        </div>
-                      
-                        <h3  class="lg:text-3xl text-xl font-bold py-2">N'hésitez pas à nous contacter</h3>
-                        <div class="py-4">
-                          <div class="flex my-2"> <img src="./svgs/IconeTél.svg"  class="w-8 h-8 mr-3"/> <p class="">+212 (0) 5 21 04 48 68</p></div>
-                          <div class="flex my-2"> <img src="./svgs/IconeMail.svg"  class="w-8 h-8 mr-3"/> <p>@almona-ingrédients.com</p></div>
-                          <div class="flex my-2">
-                            <img src="./svgs/IconeLocalisation.svg"  class="w-8 h-8 mr-3"/>
-                            <p>
-                            Almona Ingrédients | Parc Center Kamal Building B, 20, étage 3
-                            Bd. Zerktouni | Mohammedia Parc | Mohammedia | Maroc
-                          </p>
-                          </div>
-                        </div>
-                    </div>
-                  <div  id="contact" class="lg:m-auto py-4 px-2 lg:p-4 bg-white flex flex-col  lg:w-1/3 my-16 rounded  lg:py-6">
-                            <input type="text" placeholder="PRENOM" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  />
-                            <input type="text" placeholder="NOM" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  />
-                            <input type="text" placeholder="SOCIETE" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  />
-                            <input type="text" placeholder="FONCTION" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  />
-                            <input type="text" placeholder="TELEPHONE" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  />
-                            <textarea  placeholder="MESSAGE" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  >
-                             
-                  
-                            </textarea>
-                              <div class="flex"> 
-                                <input type="checkbox"  placeholder="J’accepte de m’inscrire à la newsletter d’Almona Ingrédients" /> 
-                                <p class="px-1">J’accepte de m’inscrire à la newsletter d’Almona Ingrédients</p>
+      <img  src="./images/Infos.png" class="absolute w-full h-full inset-0  m-auto  z-2"/>
+      <div class="flex   lg:absolute  bg-[#0808086e] inset-0 m-auto w-full h-full  ">
+              <div class="absolute container m-auto w-full inset-0 flex flex-col  lg:flex-row py-18 my-16 z-8 ">
+                      <div class="m-auto px-2 flex flex-col lg:w-1/2 bg-grey-700 text-white">
+                            <div>
+    
+                              <h4 class=" text-xl font-medium  py-2">Notre relation exceptionnelle commence ici,</h4>
+                            </div>
+                          
+                            <h3  class="lg:text-3xl text-xl font-bold py-2">N'hésitez pas à nous contacter</h3>
+                            <div class="py-4">
+                              <div class="flex my-2"> <img src="./svgs/IconeTél.svg"  class="w-10 h-10 mr-3"/> <p class="">+212 (0) 5 21 04 48 68</p></div>
+                              <div class="flex my-2"> <img src="./svgs/IconeMail.svg"  class="w-10 h-10 mr-3"/> <p>@almona-ingrédients.com</p></div>
+                              <div class="flex my-2">
+                                <img src="./svgs/IconeLocalisation.svg"  class="w-10 h-10 mr-3"/>
+                                <p>
+                                Almona Ingrédients | Parc Center Kamal Building B, 20, étage 3
+                                Bd. Zerktouni | Mohammedia Parc | Mohammedia | Maroc
+                              </p>
                               </div>
-                  </div>
-        
-          </div>
-        </div>
-     
-        <div class="absolute left-0 justify-between bottom-0 w-full   bg-[#0808086e] overflow-hidden">
-          <div class="container m-auto py-2  flex flex-row justify-between items-center ">
-              <img src='svgs/SmalLogo.svg' class="w-32 h-10"   />
-            <p class="text-white font-medium o">© 2024 Almona Ingrédients. Tous droits réservés</p>
-          </div>
-        
-        </div>
-</div>
-
+                            </div>
+                        </div>
+                      <div  id="contact" class="lg:m-auto py-4 px-2 lg:p-4 bg-white flex flex-col  lg:w-1/3 my-16 rounded  lg:py-6">
+                                <input type="text" placeholder="PRENOM" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  />
+                                <input type="text" placeholder="NOM" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  />
+                                <input type="text" placeholder="SOCIETE" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  />
+                                <input type="text" placeholder="FONCTION" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  />
+                                <input type="text" placeholder="TELEPHONE" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  />
+                                <textarea  placeholder="MESSAGE" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  >
+                                 
+                      
+                                </textarea>
+                                  <div class="flex"> 
+                                    <input type="checkbox"  placeholder="J’accepte de m’inscrire à la newsletter d’Almona Ingrédients" /> 
+                                    <p class="px-1">J’accepte de m’inscrire à la newsletter d’Almona Ingrédients</p>
+                                  </div>
+                      </div>
+            
+              </div>
+            </div>
+         
+            <div class="absolute left-0 justify-between bottom-0 w-full   bg-[#0808086e] overflow-hidden">
+              <div class="container m-auto py-2  flex flex-row justify-between items-center ">
+                  <img src='./svgs/SmalLogo.svg' class="w-32 h-8 lg:h-14"   />
+                <p class="text-white font-medium o">© 2024 Almona Ingrédients. Tous droits réservés</p>
+              </div>
+            
+            </div>
+    </div>
 </body>
 <script>
   const swiper = new Swiper('.swiper', {

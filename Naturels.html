@@ -1,15 +1,92 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    @font-face {
+      font-family: 'made_mirage';
+      src: url('./fonts/MADE Mirage Thin PERSONAL USE.otf') format('opentype');
+      font-weight: Thin;
+      font-style: normal;
+    }
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    @font-face {
+      font-family: 'made_mirage';
+      src: url('./fonts/MADE Mirage Regular PERSONAL USE.otf') format('opentype');
+      font-weight: Thin;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'made_mirage';
+      src: url('./fonts/MADE Mirage Black PERSONAL USE.otf') format('opentype');
+      font-weight: Thin;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'made_mirage';
+      src: url('./fonts/MADE Mirage Black PERSONAL USE.otf') format('opentype');
+      font-weight: Thin;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'gotham_book';
+      src: url('./fonts/gotham-book-58ecc4558a392.otf') format('opentype');
+      font-weight: Thin;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'gotham_book';
+      src: url('./fonts/gotham-book-58ecc4558a392.otf') format('opentype');
+      font-weight: Thin;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'HelveticaNeue Light';
+      font-style: normal;
+      font-weight: normal;
+      src: local('HelveticaNeue Light'), url('./fonts/Light.woff') format('woff');
+    }
+
+
+    @font-face {
+      font-family: 'HelveticaNeue Heavy';
+      font-style: normal;
+      font-weight: normal;
+      src: local('HelveticaNeue Heavy'), url('./fonts/HelveticaNeueHv.woff') format('woff');
+    }
+
+
+    @font-face {
+      font-family: 'HelveticaNeue';
+      font-style: normal;
+      font-weight: normal;
+      src: local('HelveticaNeue Light'), url('./fonts/Light.woff') format('woff');
+    }
+
+
+
+    @font-face {
+      font-family: 'HelveticaNeueUltraLight';
+      font-style: normal;
+      font-weight: normal;
+      src: local('HelveticaNeueUltraLight'), url('./fonts/HelveticaNeueUltraLightv130.woff') format('woff');
+    }
+
+    * {
+
+      font-family: 'HelveticaNeue'
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -24,303 +101,363 @@
     }
   </script>
 </head>
+
 <body>
- <header >
- 
- </header>
-  <div class="relative w-full h-[50vh] bg-green-300">
-    <nav class="w-full  bg-transparent bg-opacity-0 absolute top-0 left-0 bg-green-300 z-[30]  ">
-    
-      <div class="navbar mx-auto container bg-transparent bg-opacity-0  text-white w-full z-[30] " >
+  <header>
+
+  </header>
+  <div class="relative w-full h-[550px] bg-green-300">
+    <nav class="w-full  font-['gotham_book'] bg-transparent bg-opacity-0 absolute top-0 left-0 bg-green-300 z-[30]  ">
+
+      <div class="navbar mx-auto container bg-transparent bg-opacity-0  text-white w-full z-[30] ">
         <div class="navbar-start bg-transparent text-green">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
             </div>
-            <ul
-              tabindex="0"
+            <ul tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[30] mt-3 w-52 p-2 shadow text-gray-800">
-            <li><a  href="./index.html">accueil </a></li>
+              <li><a href="./index.html">Accueil </a></li>
               <li>
-                <a>nos univers </a>
+                <a>Nos univers </a>
                 <ul class="p-2 z-[30] ">
-                  <li><a href="./Food.html">food </a></li>
-                  <li><a href="./Naturels.html">naturels</a></li>
-                  <li><a  href="./Scent&Care.html">scent </a></li>
-                  <li><a href="./feed.html">care et feed</a></li>
+                  <li><a href="./Food.html">Food </a></li>
+                  <li><a href="./Naturels.html">Naturels</a></li>
+                  <li><a href="./Scent&Care.html">Scent & Care</a></li>
+                  <li><a href="./feed.html"> Feed</a></li>
 
                 </ul>
               </li>
-              <li><a a href="./Apropos.html">à propos</a></li>
-              <li><a href="#contact">contact</a></li>
+              <li><a a href="./Apropos.html">À propos</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl"><img src='svgs/SmalLogo.svg' class="w-32 h-10"   /></a>
+          <a class="btn btn-ghost text-xl"><img src='svgs/SmalLogo.svg' class="w-32 h-10" /></a>
         </div>
-        <div class="navbar-center hidden lg:flex bg-transparent  ">
+        <div class="navbar-center hidden lg:flex bg-transparent ">
           <ul class="menu menu-horizontal px-1 ">
-            <li><a  href="./index.html">accueil </a></li>
+            <li><a href="./index.html">Accueil </a></li>
             <li>
               <details>
-                <summary>nos univers</summary>
-                <ul class="p-2 z-[30] text-gray-800">
-                  <li><a href="./Food.html">food </a></li>
-                  <li><a href="./Naturels.html">naturels</a></li>
-                  <li><a  href="./Scent&Care.html">scent </a></li>
-                  <li><a href="./feed.html">care et feed</a></li>
+                <summary>Nos univers</summary>
+                <ul class="p-2 z-[30] text-gray-800 w-52 opacity-90 font-bold bg-[#ffffff8c] ">
+                  <li><a href="./Food.html">Food </a></li>
+                  <li><a href="./Naturels.html">Naturels</a></li>
+                  <li><a href="./Scent&Care.html">Scent & Care</a></li>
+                  <li><a href="./feed.html">Feed</a></li>
 
                 </ul>
               </details>
             </li>
-            <li><a a href="./Apropos.html">à propos</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a a href="./Apropos.html">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="navbar-end bg-transparent ">
-          <a class=" border p-2 rounded-lg">Service client</a>
+          <a class=" border p-2 rounded-2xl px-8">Service client</a>
           <!-- <div class="ml-2"> Search </div> -->
         </div>
       </div>
     </nav>
     <div class="absolute inset-0 ">
-    <div class="  w-full h-[50vh]  ">
-   
+      <div class="  w-full h-[550px]  ">
 
-          <div class="swiper-slide   relative w-full h-full bg-red-700 ">
-            <img src="./images/Naturels/NaturelsHeader.jpg" class="w-full h-full inset-0   " />
-            <div class="flex items-center w-full h-full inset-0 absolute bg-[#1c261f47]   m-auto text-white absolute  font-bold  ">
-                <h3 class=" text-center m-auto text-4xl  inset-y-0   ">NATURELS</h3>
-                
-            </div>
-            
-           
-          </div>
-        
+
+        <div class="swiper-slide   relative w-full h-full bg-red-700 ">
+          <img src="./images/HeadNaturels.png" class="w-full h-full inset-0   " />
+        </div>
+
+      </div>
     </div>
   </div>
-</div>
 
- 
-</div>
-<div class="m-auto container">
+
+  </div>
+  <div class="m-auto container">
     <p class="text-lg lg:text-3xl py-4 text-center my-2 mt-8">
-        L'intérêt pour les aliments naturels n'a cessé de s'accroître, mais le goût et la qualité restent la priorité
-        absolue des consommateurs. Les produits naturels ont la cote en ce moment, c'est pour cela que
-        nous vous guiderons à travers ce monde complexe et changeant à choisir la meilleur solution
-        naturelle qui correspond le mieux à votre domaine d'activité, de l'abordable au premium
+      L'intérêt pour les aliments naturels n'a cessé de s'accroître, mais le goût et la qualité restent la priorité
+      absolue des consommateurs. Les produits naturels ont la cote en ce moment, c'est pour cela que
+      nous vous guiderons à travers ce monde complexe et changeant à choisir la meilleur solution
+      naturelle qui correspond le mieux à votre domaine d'activité, de l'abordable au premium
     </p>
   </div>
-<div class="container flex   flex-col  lg:flex-row mx-auto py-16 justify-between py-2 mt-4 py-12 lg:mt-12  lg:py-24  lg:gap-16">
-  
-    
-    <div class="h-66 w-full   lg:w-2/5  rounded-md">
-        <img  src="./images/Naturels/chupa.jpg" class="rounded-2xl"/>
-      </div>
+  <div
+    class="container flex   flex-col  lg:flex-row mx-auto py-16 justify-between py-2 mt-4 py-12 lg:mt-12  lg:py-24  lg:gap-16">
 
-  
-    <div class="m-auto lg:w-3/5">
-        <div class="m-auto  px-2 ">
-        <h1 class="text-4xl my-1 font-medium  lg:text-bold text-green-700 lg:font-extrabold">Colorants Naturels </h1>
-        <p class="lg:text-lg py-2">Nos colorants sont extraits de plantes, d’épices ou de minéraux que l’on trouve
-            dans la nature. Nous proposons un large choix de colorants alimentaires naturels
-            en poudre ou en liquide pour donner de la couleur à vos aliments et faire plaisir
-            aux petits comme aux grands.</p>
-        </div>
+
+    <div class="h-66 w-full   lg:w-2/5  rounded-md">
+      <img src="./images/Naturels/chupa.jpg" class="rounded-2xl" />
     </div>
 
-</div>
-<div class="container m flex flex-col-reverse    lg:flex-row mx-auto py-2  lg:py-8 lg:my-8 lg:gap-16 ">
 
-  <div class="m-auto text-right lg:w-3/5  px-2  ">
-    <h1 class="text-4xl my-1 font-medium  text-green-700 lg:text-bold lg:font-extrabold">Poudres de
+    <div class="m-auto lg:w-3/5 text-right">
+      <div class="m-auto  px-2  ">
+        <h1 class="py-2 text-5xl font-['made_mirage'] my-1 font-medium  lg:text-bold text-green-700 lg:font-extrabold">
+          Colorants Naturels </h1>
+        <p class="lg:text-lg py-2">Nos colorants sont extraits de plantes, d’épices ou de minéraux que l’on trouve
+          dans la nature. Nous proposons un large choix de colorants alimentaires naturels
+          en poudre ou en liquide pour donner de la couleur à vos aliments et faire plaisir
+          aux petits comme aux grands.</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="container m flex flex-col-reverse    lg:flex-row mx-auto py-2  lg:py-8 lg:my-8 lg:gap-16 text-left ">
+
+    <div class="m-auto  text-left lg:w-3/5  px-2  ">
+      <h1 class="py-2 text-5xl font-['made_mirage'] my-1 font-medium  text-green-700 lg:text-bold lg:font-extrabold">Poudres
+        de
         Fruits et Légumes</h1>
-    <p class="lg:text-lg py-2 ">Découvrez notre sélection de poudres de fruits et de légumes, utilisées dans
+      <p class="lg:text-lg py-2 ">Découvrez notre sélection de poudres de fruits et de légumes, utilisées dans
         des centaines d'applications alimentaires. Ce sont des poudres fines, très solubles,
         avec une longue durée de conservation, ce qui les rend idéales dans la fabrication
         de vos produits alimenatires. Sans sucres ajoutés, sans additifs et 100% naturel,
         une petite quantité de ces poudres permet d'obtenir les mêmes apports
         que le fruit ou le légume frais.</p>
-    
-  </div>
-  <div class="h-66 w-full   lg:w-2/5  rounded-md ">
-    <img  src="./images/Naturels/smoothies.jpg" class="rounded-2xl"/>
-  </div>
+
+    </div>
+    <div class="h-66 w-full   lg:w-2/5  rounded-md ">
+      <img src="./images/Naturels/smoothies.jpg" class="rounded-2xl" />
+    </div>
 
 
-</div>
-<div class="container  flex flex-col   lg:flex-row mx-auto py-2 lg:py-16 lg:my-8 lg:gap-16">
+  </div>
+  <div class="container  flex flex-col   lg:flex-row mx-auto py-2 lg:py-16 lg:my-8 lg:gap-16">
     <div class="h-66 w-full    lg:w-2/5  rounded-lg ">
-        <img  src="./images/Naturels/Raïb.jpg" class=" rounded-2xl"/>
-      </div>
-  <div class="m-auto  lg:w-3/5  px-2  ">
-    <h1 class="text-4xl my-1 font-medium text-green-700 lg:text-extrabold ">Flakes et Crunchies
-        de Fruits et Légumes</h1>
-    <p class="lg:text-lg py-2  pr-6">Que ce soit les légumes ou les fruits, comme la fraise, la framboise
+      <img src="./images/Naturels/Raïb.jpg" class=" rounded-2xl" />
+    </div>
+    <div class="m-auto  lg:w-3/5  px-2  text-right">
+      <h1
+        class="py-2 text-5xl font-['made_mirage'] my-1 font-medium  text-green-700 lg:text-bold lg:font-extrabold   text-right">
+        Flakes et Crunchies de Fruits et Légumes</h1>
+      <p class="lg:text-lg py-2  ">Que ce soit les légumes ou les fruits, comme la fraise, la framboise
         ou la banane populaire,nous les avons tous, ainsi que d’autres options encore
         plus exotiques. Nos Flakes et Crunchies se différencient autour de formes
         uniques et de saveurs nouvelles et nostalgiques. Soucieux de trouver
         le bon équilibre entre santé et plaisir, tout en exploitant les dernières
         tendances technologiques en matière de régime alimentaire, nous vous
         offrons une selection à base d’ingrédients naturelles de qualité.</p>
-    
+
+    </div>
+
+
+
   </div>
-  
-
-
-</div>
-<div class="container  flex flex-col   lg:flex-row mx-auto py-2 lg:py-16 lg:my-8 lg:gap-16">
+  <div class="container  flex  flex-col-reverse   lg:flex-row mx-auto py-2 lg:py-16 lg:my-8 lg:gap-16">
 
     <div class="m-auto  lg:w-3/5  px-2  ">
-      <h1 class="text-4xl my-1 font-medium text-green-700 lg:text-extrabold ">Poudres de viande</h1>
+      <h1 class="py-2 text-5xl font-['made_mirage'] my-1 font-medium  text-green-700 lg:text-bold lg:font-extrabold ">Poudres
+        de viande</h1>
       <p class="lg:text-lg py-2  pr-6">Nous vous présentons des solutions de goût de viande naturel auxquelles
         vous pouvez faire confiance. Nos poudres de viande sont produites à partir
         de matériaux naturels soigneusement sélectionnés et peu traités, elles sont faciles
         à utiliser, stables à la température ambiante et stables à la chaleur.
         Nos poudres préservent toute leur saveur, leur teneur en nutriments et leur goût
         de viande authentique. ( Certifications halal disponibles sur demande ).</p>
-      
+
     </div>
     <div class="h-66 w-full    lg:w-2/5  rounded-lg ">
-        <img  src="./images/Naturels/Soupe.jpg" class=" rounded-2xl w-full h-full"/>
-      </div>
-  
-  
+      <img src="./images/Naturels/Soupe.jpg" class=" rounded-2xl w-full h-full" />
+    </div>
+
+
   </div>
-<div>
-<div class="container m-auto    ">
-  <div class="flex m-auto   justify-center h-18     items-center">
-   <img src="svgs/CercleOrPh.svg" class="w-12 h-12 inline mx-2" />
-    <h3 class="text-2xl lg:text-4xl font-medium  text-center py-6 mx-2  ">NOS  DOMAINES  D'ACTIVITÉS
-    </h3>
-    <img src="svgs/4CerclesDomainesActivités.svg"  class="w-52 h-28 inline mx-2"  />
-    
+  <div class="container  flex flex-col   lg:flex-row mx-auto py-2 lg:py-16 lg:my-8 lg:gap-16">
+    <div class="h-66 w-full    lg:w-2/5  rounded-lg ">
+      <img src="./images/Naturels/Baby.jpg" class=" rounded-2xl" />
+    </div>
+    <div class="m-auto  lg:w-3/5  px-2  text-right">
+      <h1
+        class="py-2 text-5xl font-['made_mirage'] my-1 font-medium  text-green-700 lg:text-bold lg:font-extrabold   text-right">
+        Baby Food</h1>
+      <p class="lg:text-lg py-2  ">Nous voulons tous que nos bébés aient accès à des produits alimentaires
+        sûrs et nutritifs. Conscients de notre rôle important au sein de la chaîne
+        d'approvisionnement, nous vous offrons des solutions saines et naturelles
+        pendant toutes les étapes du développement de bébé. Nos aliments pour
+        bébés sont fabriqués à partir de sources de matières premières naturelles
+        ( poisoon, viande, miel, fruits et légumes ) issues de différentes technologies,
+        et fournissant des fonctionnalités de goût, de nutrition et de texture.</p>
+
+    </div>
+
+
+
   </div>
+  <div class="container  flex  flex-col-reverse   lg:flex-row mx-auto py-2 lg:py-16 lg:my-8 lg:gap-16">
 
-  <div class="flex flex-col lg:flex-row justify-between py-6">
-    <div class="my-3 lg:mx-2 flex flex-col  ">
-      <div class="w-72 h-52  lg:my-2 m-auto">
-        <img src="./images/Food1.png" />
-
-      </div>
-      <a href="/Food.html" class="my-2 m-auto border border-2 py-2  px-8 w-32  rounded-xl mx-auto  border-red-500 shadow shadow-2xl">
-      découvrir</a>
-
-    </div>
-    <div class="my-3 lg:mx-2 flex flex-col  ">
-      <div class="w-72 h-52  lg:my-2 mx-auto ">
-        <img src="./images/Naturels1.png" />
-      </div>
-       <a href="./Naturels.html" class="my-2 m-auto border border-2 py-2  px-8 w-32  rounded-xl mx-auto  border-lime-700 shadow shadow-2x">
-        découvrir</a>
+    <div class="m-auto  lg:w-3/5  px-2  ">
+      <h1 class="py-2 text-5xl font-['made_mirage'] my-1 font-medium  text-green-700 lg:text-bold lg:font-extrabold ">Antioxydants
+        et Conservateurs Naturels</h1>
+      <p class="lg:text-lg py-2  pr-6">Composés exclusivement d'ingrédients naturels, nos conservateurs et antioxydants
+        protégent vos produits alimentaires ou autres, contre les effets néfastesde l'oxydation,
+        moisissures ou levures, évitent leur rancissement et leurs garantissent une durée
+        de vie suffisante ainsi qu'une utilisation optimale et satisfaisante.</p>
 
     </div>
-    <div class="my-3 lg:mx-2 flex flex-col  ">
-      <div class="w-72 h-52  lg:my-2 mx-auto">
-        <img src="./images/S&C1.png" />
-      </div>
-      <a href="./Scent&Care.html"  class="my-2 m-auto border border-2 py-2  px-8 w-32  rounded-xl mx-auto  border-cyan-600 shadow shadow-2x">
-        découvrir</a>
-
+    <div class="h-66 w-full    lg:w-2/5  rounded-lg ">
+      <img src="./images/Naturels/donote.jpg" class=" rounded-2xl w-full h-full" />
     </div>
-    <div class="my-3 lg:mx-2 flex flex-col  ">
-      <div class="w-72 h-52  lg:my-2 mx-auto">
-        <img src="./images/Feed1.png" />
-      </div>
-      <a href="feed.html"  class="my-2 m-auto border border-2 py-2  px-8 w-32  rounded-xl mx-auto  border-yellow-400 shadow shadow-2x">
-        découvrir</a>
 
-    </div>
+
   </div>
 
-</div>
-</div>
-<div class="pb-4 flex  flex-col relative pt-16 lg:px-16 lg:py-18    lg:relative h-[890px] overflow-hidden">
-     
-  <img  src=" https://placeholderimage.eu/api/monument/id/1/900/600" class="absolute w-full h-full inset-0  m-auto  z-2"/>
-  <div class="flex   lg:absolute  bg-[#0808086e] inset-0 m-auto w-full h-full  ">
-          <div class="absolute container m-auto w-full inset-0 flex flex-col  lg:flex-row py-18 my-16 z-8 ">
-                  <div class="m-auto px-2 flex flex-col lg:w-1/2 bg-grey-700 text-white">
-                        <div>
 
-                          <h4 class=" text-xl font-medium  py-2">Notre relation exceptionnelle commence ici,</h4>
-                        </div>
-                      
-                        <h3  class="lg:text-3xl text-xl font-bold py-2">N'hésitez pas à nous contacter</h3>
-                        <div class="py-4">
-                          <div class="flex my-2"> <img src="./svgs/IconeTél.svg"  class="w-8 h-8 mr-3"/> <p class="">+212 (0) 5 21 04 48 68</p></div>
-                          <div class="flex my-2"> <img src="./svgs/IconeMail.svg"  class="w-8 h-8 mr-3"/> <p>@almona-ingrédients.com</p></div>
-                          <div class="flex my-2">
-                            <img src="./svgs/IconeLocalisation.svg"  class="w-8 h-8 mr-3"/>
-                            <p>
-                            Almona Ingrédients | Parc Center Kamal Building B, 20, étage 3
-                            Bd. Zerktouni | Mohammedia Parc | Mohammedia | Maroc
-                          </p>
-                          </div>
-                        </div>
-                    </div>
-                  <div  id="contact" class="lg:m-auto py-4 px-2 lg:p-4 bg-white flex flex-col  lg:w-1/3 my-16 rounded  lg:py-6">
-                            <input type="text" placeholder="PRENOM" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  />
-                            <input type="text" placeholder="NOM" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  />
-                            <input type="text" placeholder="SOCIETE" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  />
-                            <input type="text" placeholder="FONCTION" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  />
-                            <input type="text" placeholder="TELEPHONE" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  />
-                            <textarea  placeholder="MESSAGE" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  >
-                             
-                  
-                            </textarea>
-                              <div class="flex"> 
-                                <input type="checkbox"  placeholder="J’accepte de m’inscrire à la newsletter d’Almona Ingrédients" /> 
-                                <p class="px-1">J’accepte de m’inscrire à la newsletter d’Almona Ingrédients</p>
-                              </div>
-                  </div>
-        
+  <div class="container  flex flex-col   lg:flex-row mx-auto py-2 lg:py-16 lg:my-8 lg:gap-16">
+    <div class="h-66 w-full    lg:w-2/5  rounded-lg ">
+      <img src="./images/Naturels/huile.jpg" class=" rounded-2xl" />
+    </div>
+    <div class="m-auto  lg:w-3/5  px-2  text-right">
+      <h1
+        class="py-2 text-5xl font-['made_mirage'] my-1 font-medium  text-green-700 lg:text-bold lg:font-extrabold   text-right">
+        Huiles Essentielles</h1>
+      <p class="lg:text-lg py-2  ">Nos huiles essentielles sont toutes 100% pures et naturelles. Elles sont vendues
+        comme « matières premières » pour réaliser vos mélanges. Nos huiles essentielles
+        répondent à tous les critères de qualité botanique et biochimique.
+        Chaque étape de fabrication est extrêmement contrôlée afin de vous
+        apporter la plus grande qualité au meilleur prix.</p>
+
+    </div>
+
+
+
+  </div>
+  <div>
+    <div class="container m-auto    ">
+      <div class="flex m-auto   justify-center h-18     items-center">
+        <img src="./svgs/CercleOrPh.svg" class="w-12 h-12 inline mx-2" />
+        <h3 class="text-2xl lg:py-2 text-5xl font-['made_mirage'] font-medium  text-center py-6 mx-2  font-['made_mirage']">
+          NOS DOMAINES D'ACTIVITÉS
+        </h3>
+        <img src="svgs/4CerclesDomainesActivités.svg" class="w-28 h-16 inline mx-2" />
+      </div>
+
+      <div class="flex flex-col lg:flex-row justify-between py-6">
+        <div class="my-3 lg:mx-2 flex flex-col  ">
+          <a href="./Food.html" class="w-72 h-52  lg:my-2 m-auto">
+            <img src="./images/Food4.png" />
+
+          </a>
+          <a href="./Food.html"
+            class="my-2 m-auto border border-2 py-2  px-8 text-center w-36  rounded-3xl mx-auto  border-red-500 shadow shadow-2xl">
+            <span class="text-center m-auto">Découvrir </span></a>
+
+        </div>
+        <div class="my-3 lg:mx-2 flex flex-col  ">
+          <a href="./Naturels.html" class="w-72 h-52  lg:my-2 mx-auto ">
+            <img src="./images/Naturels4.png" />
+          </a>
+          <a href="./Naturels.html"
+            class="my-2 m-auto border border-2 py-2  px-8 text-center w-36  rounded-3xl mx-auto  border-lime-700 shadow shadow-2x">
+            <span class="text-center m-auto">Découvrir </span></a>
+
+        </div>
+        <div class="my-3 lg:mx-2 flex flex-col  ">
+          <a src="./images/S&C1.png" class="w-72 h-52  lg:my-2 mx-auto">
+            <img src="./images/S&C4.png" />
+          </a>
+          <a href="./Scent&Care.html"
+            class="my-2 m-auto border border-2 py-2  px-8 text-center w-36  rounded-3xl mx-auto  border-cyan-600 shadow shadow-2x">
+            <span class="text-center m-auto">Découvrir </span></a>
+
+        </div>
+        <div class="my-3 lg:mx-2 flex flex-col  ">
+          <a href="./feed.html" class="w-72 h-52  lg:my-2 mx-auto">
+            <img src="./images/Feed4.png" />
+          </a>
+          <a href="./feed.html"
+            class="my-2 m-auto border border-2 py-2  px-8 text-center w-36  rounded-3xl mx-auto  border-yellow-400 shadow shadow-2x">
+            <span class="text-center m-auto">Découvrir </span></a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="pb-4 flex  flex-col relative pt-16 lg:px-16 lg:py-18    lg:relative h-[890px] overflow-hidden">
+
+    <img src="./images/Infos.png" class="absolute w-full h-full inset-0  m-auto  z-2" />
+    <div class="flex   lg:absolute  bg-[#0808086e] inset-0 m-auto w-full h-full  ">
+      <div class="absolute container m-auto w-full inset-0 flex flex-col  lg:flex-row py-18 my-16 z-8 ">
+        <div class="m-auto px-2 flex flex-col lg:w-1/2 bg-grey-700 text-white">
+          <div>
+
+            <h4 class=" text-xl font-medium  py-2">Notre relation exceptionnelle commence ici,</h4>
+          </div>
+
+          <h3 class="lg:text-3xl text-xl font-bold py-2">N'hésitez pas à nous contacter</h3>
+          <div class="py-4">
+            <div class="flex my-2"> <img src="./svgs/IconeTél.svg" class="w-10 h-10 mr-3" />
+              <p class="">+212 (0) 5 21 04 48 68</p>
+            </div>
+            <div class="flex my-2"> <img src="./svgs/IconeMail.svg" class="w-10 h-10 mr-3" />
+              <p>@almona-ingrédients.com</p>
+            </div>
+            <div class="flex my-2">
+              <img src="./svgs/IconeLocalisation.svg" class="w-10 h-10 mr-3" />
+              <p>
+                Almona Ingrédients | Parc Center Kamal Building B, 20, étage 3
+                Bd. Zerktouni | Mohammedia Parc | Mohammedia | Maroc
+              </p>
+            </div>
           </div>
         </div>
-     
-        <div class="absolute left-0 justify-between bottom-0 w-full   bg-[#0808086e] overflow-hidden">
-          <div class="container m-auto py-2  flex flex-row justify-between items-center ">
-              <img src='svgs/SmalLogo.svg' class="w-32 h-10"   />
-            <p class="text-white font-medium o">© 2024 Almona Ingrédients. Tous droits réservés</p>
+        <div id="contact" class="lg:m-auto py-4 px-2 lg:p-4 bg-white flex flex-col  lg:w-1/3 my-16 rounded  lg:py-6">
+          <input type="text" placeholder="PRENOM" class="input input-bordered  lg:w-full my-2 mx-1 p-2" />
+          <input type="text" placeholder="NOM" class="input input-bordered  lg:w-full my-2 mx-1 p-2" />
+          <input type="text" placeholder="SOCIETE" class="input input-bordered  lg:w-full my-2 mx-1 p-2" />
+          <input type="text" placeholder="FONCTION" class="input input-bordered  lg:w-full my-2 mx-1 p-2" />
+          <input type="text" placeholder="TELEPHONE" class="input input-bordered  lg:w-full my-2 mx-1 p-2" />
+          <textarea placeholder="MESSAGE" class="input input-bordered  lg:w-full my-2 mx-1 p-2">
+
+
+                                </textarea>
+          <div class="flex">
+            <input type="checkbox" placeholder="J’accepte de m’inscrire à la newsletter d’Almona Ingrédients" />
+            <p class="px-1">J’accepte de m’inscrire à la newsletter d’Almona Ingrédients</p>
           </div>
-        
         </div>
-</div>
+
+      </div>
+    </div>
+
+    <div class="absolute left-0 justify-between bottom-0 w-full   bg-[#0808086e] overflow-hidden">
+      <div class="container m-auto py-2  flex flex-row justify-between items-center ">
+        <img src='./svgs/SmalLogo.svg' class="w-32 h-8 lg:h-14" />
+        <p class="text-white font-medium o">© 2024 Almona Ingrédients. Tous droits réservés</p>
+      </div>
+
+    </div>
+  </div>
 
 </body>
 <script>
   const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  autoplay: {
-   delay: 5000,
- },
-  loop: true,
+    // Optional parameters
+    autoplay: {
+      delay: 5000,
+    },
+    loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
 </script>
+
 </html>
