@@ -15,12 +15,11 @@
     }
 
     @font-face {
-      font-family: 'made_mirage';
-      src: url('./fonts/MADE Mirage Regular PERSONAL USE.otf') format('opentype');
-      font-weight: Thin;
-      font-style: normal;
-    }
-
+    font-family: 'made__mirage_regular';
+    src: url('./fonts/MADE Mirage Regular PERSONAL USE.otf') format('opentype');
+    font-weight: Thin;
+    font-style: normal;
+}
     @font-face {
       font-family: 'made_mirage';
       src: url('./fonts/MADE Mirage Black PERSONAL USE.otf') format('opentype');
@@ -106,10 +105,10 @@
   <header>
 
   </header>
-  <div class="relative w-full h-[550px] bg-green-300">
-    <nav class="w-full  font-['gotham_book'] bg-transparent bg-opacity-0 absolute top-0 left-0 bg-green-300 z-[30]  ">
+  <div class="relative w-full bg-green-300">
+    <nav class="w-full  font-['gotham_book'] bg-[#0000007a] absolute top-0 left-0  z-[30]  ">
 
-      <div class="navbar mx-auto container bg-transparent bg-opacity-0  text-white w-full z-[30] ">
+      <div class="navbar mx-auto container  text-white w-full z-[30] ">
         <div class="navbar-start bg-transparent text-green">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -157,17 +156,17 @@
           </ul>
         </div>
         <div class="navbar-end bg-transparent ">
-          <a class=" border p-2 rounded-2xl px-8">Service client</a>
+          <a class=" border p-2 rounded-2xl   px-8">Service client</a>
           <!-- <div class="ml-2"> Search </div> -->
         </div>
       </div>
     </nav>
-    <div class="absolute inset-0 ">
-      <div class="  w-full h-[550px]  ">
+    <div class=" inset-0 ">
+      <div class="  w-full  ">
 
 
-        <div class="swiper-slide   relative w-full h-full bg-red-700 ">
-          <img src="./images/HeadNaturels.png" class="w-full h-full inset-0   " />
+        <div class="   relative w-full h-full bg-red-700 ">
+          <img src="./images/Naturels/Naturels.png" class="w-full h-full inset-0   " />
         </div>
 
       </div>
@@ -177,7 +176,7 @@
 
   </div>
   <div class="m-auto container">
-    <p class="text-lg lg:text-3xl py-4 text-center my-2 mt-8">
+    <p class="text-lg lg:text-3xl py-4 text-center my-2 mt-8 font-['made__mirage_regular']">
       L'intérêt pour les aliments naturels n'a cessé de s'accroître, mais le goût et la qualité restent la priorité
       absolue des consommateurs. Les produits naturels ont la cote en ce moment, c'est pour cela que
       nous vous guiderons à travers ce monde complexe et changeant à choisir la meilleur solution
@@ -189,7 +188,7 @@
 
 
     <div class="h-66 w-full   lg:w-2/5  rounded-md">
-      <img src="./images/Naturels/chupa.jpg" class="rounded-2xl" />
+      <img src="./images/Naturels/Naturels01.png" class="rounded-2xl  w-full h-full " />
     </div>
 
 
@@ -220,14 +219,14 @@
 
     </div>
     <div class="h-66 w-full   lg:w-2/5  rounded-md ">
-      <img src="./images/Naturels/smoothies.jpg" class="rounded-2xl" />
+      <img src="./images/Naturels/Naturels02.png" class="rounded-2xl  w-full h-full" />
     </div>
 
 
   </div>
   <div class="container  flex flex-col   lg:flex-row mx-auto py-2 lg:py-16 lg:my-8 lg:gap-16">
     <div class="h-66 w-full    lg:w-2/5  rounded-lg ">
-      <img src="./images/Naturels/Raïb.jpg" class=" rounded-2xl" />
+      <img src="./images/Naturels/Naturels03.png" class=" rounded-2xl  w-full h-full" />
     </div>
     <div class="m-auto  lg:w-3/5  px-2  text-right">
       <h1
@@ -260,14 +259,14 @@
 
     </div>
     <div class="h-66 w-full    lg:w-2/5  rounded-lg ">
-      <img src="./images/Naturels/Soupe.jpg" class=" rounded-2xl w-full h-full" />
+      <img src="./images/Naturels/Naturels04.png" class=" rounded-2xl  w-full h-full w-full h-full" />
     </div>
 
 
   </div>
   <div class="container  flex flex-col   lg:flex-row mx-auto py-2 lg:py-16 lg:my-8 lg:gap-16">
     <div class="h-66 w-full    lg:w-2/5  rounded-lg ">
-      <img src="./images/Naturels/Baby.jpg" class=" rounded-2xl" />
+      <img src="./images/Naturels/Naturels05.png" class=" rounded-2xl  w-full h-full" />
     </div>
     <div class="m-auto  lg:w-3/5  px-2  text-right">
       <h1
@@ -298,7 +297,7 @@
 
     </div>
     <div class="h-66 w-full    lg:w-2/5  rounded-lg ">
-      <img src="./images/Naturels/donote.jpg" class=" rounded-2xl w-full h-full" />
+      <img src="./images/Naturels/Naturels06.png" class=" rounded-2xl  w-full h-full w-full h-full" />
     </div>
 
 
@@ -307,7 +306,7 @@
 
   <div class="container  flex flex-col   lg:flex-row mx-auto py-2 lg:py-16 lg:my-8 lg:gap-16">
     <div class="h-66 w-full    lg:w-2/5  rounded-lg ">
-      <img src="./images/Naturels/huile.jpg" class=" rounded-2xl" />
+      <img src="./images/Naturels/Naturels07.png" class=" rounded-2xl  w-full h-full" />
     </div>
     <div class="m-auto  lg:w-3/5  px-2  text-right">
       <h1
@@ -377,61 +376,56 @@
   </div>
 
   <div class="pb-4 flex  flex-col relative pt-16 lg:px-16 lg:py-18    lg:relative h-[890px] overflow-hidden">
-
-    <img src="./images/Infos.png" class="absolute w-full h-full inset-0  m-auto  z-2" />
+     
+    <img  src="./images/Infos.png" class="absolute w-full h-full inset-0  m-auto  z-2"/>
     <div class="flex   lg:absolute  bg-[#0808086e] inset-0 m-auto w-full h-full  ">
-      <div class="absolute container m-auto w-full inset-0 flex flex-col  lg:flex-row py-18 my-16 z-8 ">
-        <div class="m-auto px-2 flex flex-col lg:w-1/2 bg-grey-700 text-white">
-          <div>
-
-            <h4 class=" text-xl font-medium  py-2">Notre relation exceptionnelle commence ici,</h4>
-          </div>
-
-          <h3 class="lg:text-3xl text-xl font-bold py-2">N'hésitez pas à nous contacter</h3>
-          <div class="py-4">
-            <div class="flex my-2"> <img src="./svgs/IconeTél.svg" class="w-10 h-10 mr-3" />
-              <p class="">+212 (0) 5 21 04 48 68</p>
+            <div class="absolute container m-auto w-full inset-0 flex flex-col  lg:flex-row py-18 my-16 z-8 ">
+                    <div class="m-auto px-2 flex flex-col lg:w-1/2 bg-grey-700 text-white">
+                          <div>
+  
+                            <h4 class=" text-2xl font-bold  font-['made_mirage']">Notre relation exceptionnelle commence ici,</h4>
+                          </div>
+                        
+                          <h3  class="lg:text-4xl text-xl font-bold font-['made_mirage']">n'hésitez pas à nous contacter</h3>
+                          <div class="py-4 mt-2">
+                            <div class="flex my-2 flex  items-center"> <img src="./svgs/IconeTél.svg"  class="w-10 h-10 mr-3"/> <p class="">+212 (0) 5 21 04 48 68</p></div>
+                            <div class="flex my-2 flex  items-center"> <img src="./svgs/IconeMail.svg"  class="w-10 h-10 mr-3"/> <p>@almona-ingrédients.com</p></div>
+                            <div class="flex my-2 flex  items-center">
+                              <img src="./svgs/IconeLocalisation.svg"  class="w-10 h-10 mr-3"/>
+                              <p>
+                              Almona Ingrédients | Parc Center Kamal Building B, 20, étage 3
+                              Bd. Zerktouni | Mohammedia Parc | Mohammedia | Maroc
+                            </p>
+                            </div>
+                          </div>
+                      </div>
+                    <div  id="contact" class="lg:m-auto py-4 px-2 lg:p-4 bg-white flex flex-col  lg:w-1/3 my-16 rounded  lg:py-6">
+                              <input type="text" placeholder="PRENOM" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  />
+                              <input type="text" placeholder="NOM" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  />
+                              <input type="text" placeholder="SOCIETE" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  />
+                              <input type="text" placeholder="FONCTION" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  />
+                              <input type="text" placeholder="TELEPHONE" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  />
+                              <textarea  placeholder="MESSAGE" class="input input-bordered  lg:w-full my-2 mx-1 p-2"  >
+                               
+                    
+                              </textarea>
+                                <div class="flex"> 
+                                  <input type="checkbox"  placeholder="J’accepte de m’inscrire à la newsletter d’Almona Ingrédients" /> 
+                                  <p class="px-1">J’accepte de m’inscrire à la newsletter d’Almona Ingrédients</p>
+                                </div>
+                    </div>
+          
             </div>
-            <div class="flex my-2"> <img src="./svgs/IconeMail.svg" class="w-10 h-10 mr-3" />
-              <p>@almona-ingrédients.com</p>
-            </div>
-            <div class="flex my-2">
-              <img src="./svgs/IconeLocalisation.svg" class="w-10 h-10 mr-3" />
-              <p>
-                Almona Ingrédients | Parc Center Kamal Building B, 20, étage 3
-                Bd. Zerktouni | Mohammedia Parc | Mohammedia | Maroc
-              </p>
-            </div>
           </div>
-        </div>
-        <div id="contact" class="lg:m-auto py-4 px-2 lg:p-4 bg-white flex flex-col  lg:w-1/3 my-16 rounded  lg:py-6">
-          <input type="text" placeholder="PRENOM" class="input input-bordered  lg:w-full my-2 mx-1 p-2" />
-          <input type="text" placeholder="NOM" class="input input-bordered  lg:w-full my-2 mx-1 p-2" />
-          <input type="text" placeholder="SOCIETE" class="input input-bordered  lg:w-full my-2 mx-1 p-2" />
-          <input type="text" placeholder="FONCTION" class="input input-bordered  lg:w-full my-2 mx-1 p-2" />
-          <input type="text" placeholder="TELEPHONE" class="input input-bordered  lg:w-full my-2 mx-1 p-2" />
-          <textarea placeholder="MESSAGE" class="input input-bordered  lg:w-full my-2 mx-1 p-2">
-
-
-                                </textarea>
-          <div class="flex">
-            <input type="checkbox" placeholder="J’accepte de m’inscrire à la newsletter d’Almona Ingrédients" />
-            <p class="px-1">J’accepte de m’inscrire à la newsletter d’Almona Ingrédients</p>
+       
+          <div class="absolute left-0 justify-between bottom-0 w-full   bg-[#0808086e] overflow-hidden">
+            <div class="container m-auto py-2  flex flex-row justify-between items-center ">
+                <img src='./svgs/SmalLogo.svg' class="w-32 h-8 lg:h-14"   />
+              <p class="text-white font-medium o">© 2024 Almona Ingrédients. Tous droits réservés</p>
+            </div>
+          
           </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="absolute left-0 justify-between bottom-0 w-full   bg-[#0808086e] overflow-hidden">
-      <div class="container m-auto py-2  flex flex-row justify-between items-center ">
-        <img src='./svgs/SmalLogo.svg' class="w-32 h-8 lg:h-14" />
-        <p class="text-white font-medium o">© 2024 Almona Ingrédients. Tous droits réservés</p>
-      </div>
-
-    </div>
   </div>
-
 </body>
 <script>
   const swiper = new Swiper('.swiper', {
