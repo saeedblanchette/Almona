@@ -9,80 +9,133 @@
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
 <style>
-
-
-  @font-face {
-    font-family: 'made_mirage';
-    src: url('./fonts/MADE Mirage Black PERSONAL USE.otf') format('opentype');
-    font-weight: Thin;
-    font-style: normal;
+  /* Keyframes for the fade-in-left animation */
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
-  @font-face {
-    font-family: 'gotham_book';
-    src: url('./fonts/gotham-book-58ecc4558a392.otf') format('opentype');
-    font-weight: Thin;
-    font-style: normal;
+  /* Keyframes for the fade-in-right animation */
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
-  @font-face {
-    font-family: 'gotham_book';
-    src: url('./fonts/gotham-book-58ecc4558a392.otf') format('opentype');
-    font-weight: Thin;
-    font-style: normal;
+  /* Keyframes for the fade-out-left animation */
+  @keyframes fadeOutLeft {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
   }
 
-  @font-face {
-    font-family: 'HelveticaNeue Light';
-    font-style: normal;
-    font-weight: normal;
-    src: local('HelveticaNeue Light'), url('./fonts/Light.woff') format('woff');
+  /* Keyframes for the fade-out-right animation */
+  @keyframes fadeOutRight {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(100%);
+    }
   }
 
-
-  @font-face {
-    font-family: 'HelveticaNeue Heavy';
-    font-style: normal;
-    font-weight: normal;
-    src: local('HelveticaNeue Heavy'), url('./fonts/HelveticaNeueHv.woff') format('woff');
+  /* Fade-in-left utility class */
+  .fade-in-left {
+    animation: fadeInLeft 1s ease-in-out forwards;
   }
 
-
-  @font-face {
-    font-family: 'HelveticaNeue';
-    font-style: normal;
-    font-weight: normal;
-    src: local('HelveticaNeue Light'), url('./fonts/Light.woff') format('woff');
+  /* Fade-in-right utility class */
+  .fade-in-right {
+    animation: fadeInRight 1s ease-in-out forwards;
   }
 
-
-
-  @font-face {
-    font-family: 'HelveticaNeueUltraLight';
-    font-style: normal;
-    font-weight: normal;
-    src: local('HelveticaNeueUltraLight'), url('./fonts/HelveticaNeueUltraLightv130.woff') format('woff');
+  /* Fade-out-left utility class */
+  .fade-out-left {
+    animation: fadeOutLeft 1s ease-in-out forwards;
   }
 
-  * {
+  /* Fade-out-right utility class */
+  .fade-out-right {
+    animation: fadeOutRight 1s ease-in-out forwards;
+  }
 
-    font-family: 'HelveticaNeue'
+  /* Initial opacity set to 0 */
+  .hidden {
+    opacity: 0;
   }
 </style>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+ 
+<!-- <script src="https://cdn.jsdelivr.net/npm/tailwindcss-animated@1.1.2/src/index.min.js"></script> -->
+  <script  >
+    
     tailwind.config = {
+ 
+	corePlugins: {
+		preflight: true
+	},
       theme: {
         extend: {
           colors: {
             clifford: '#da373d',
              transparent: 'transparent',
-          }
+          },
+          "animation": {
+            "fade-in-left": "fade-in-left 0.6s ease-in-out"
+      },
+      "fade-in-left": {
+        "0%": {
+          "opacity": "0",
+          "transform": "translateX(20px)"
+        },
+        "100%": {
+          "opacity": "1",
+          "transform": "translateX(0)"
+        }
+      }
         }
       }
     }
   </script>
+    <style>
+      /* Keyframes for the fade-in-left animation */
+      @keyframes fadeInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-100%);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      
+      /* Custom utility class for fade-in-left animation */
+      .fade-in-left {
+        opacity: 0;
+        animation: fadeInLeft 1s ease-in-out forwards;
+      }
+    </style>
+    
 </head>
 <body>
  <header >
@@ -228,11 +281,11 @@
             </div>
       </div>
        <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
+    <div class="swiper-pagination  "></div>
   
     <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev  "></div>
+    <div class="swiper-button-next  "></div>
     </div>
   </div>
 </div>
@@ -241,7 +294,7 @@
 </div>
 <div class="container flex   flex-col  lg:flex-row mx-auto py-16justify-between py-2 mt-4 py-18 lg:mt-24  lg:py-24  lg:gap-16">
   <div class="m-auto lg:w-3/5">
-    <div class="m-auto  px-2 overflow-hidden ">
+    <div class="m-auto  px-2 overflow-hidden  fade-in-left-trigger">
     <h1 class="py-2 text-5xl font-['made_mirage'] my-1 font-medium  lg:font-bold text-[#BD9A5F]  font-['made_mirage']">Almona Ingrédients en quelques lignes</h1>
     <p class="lg:text-lg py-2  ">Nous sommes une société de distribution d’ingrédients agro-alimentaires et de parfums, basée
       à Casablanca. Nous opèrons au Maroc, en Algérie, en Tunisie et au Sénégal.</p>
@@ -278,17 +331,17 @@
 
       </div>
 </div>
-  <div class=" w-full  flex  lg:w-2/5  rounded-md justify-center lg:justify-end overflow-hidden">
-    <img  src="./images/Accueil/Acceuil01.png" class="rounded-2xl  lg:justify-end w-full h-full"/>
+  <div class=" w-full  flex  lg:w-2/5  rounded-md justify-center lg:justify-end overflow-hidden  fade-in-right-trigger">
+    <img  src="./images/Accueil/Acceuil01.png" class="rounded-2xl  lg:justify-end w-full h-full   fade-in-left-trigger"/>
   </div>
 
 
 </div>
 <div class="container m flex flex-col-reverse    lg:flex-row mx-auto py-2  lg:py-24 lg:my-16 lg:gap-16 ">
-  <div class="h-66 w-full   lg:w-2/5  rounded-md ">
+  <div class="h-66 w-full   lg:w-2/5  rounded-md fade-in-left-trigger ">
     <img  src="./images/Accueil/Acceuil02.png" class="rounded-2xl"/>
   </div>
-  <div class="m-auto text-right lg:w-3/5  px-2  ">
+  <div class="m-auto text-right lg:w-3/5  px-2 fade-in-right-trigger  ">
     <h1 class="text-5xl my-1 font-medium text-[#BD9A5F]  lg:font-bold font-['made_mirage']">Proposition de valeur</h1>
     <p class="lg:text-lg py-2  ">Notre enracinement dans la région nous permet de partager
       la même culture que nos clients. Grâce à notre partenariat mondial,
@@ -303,7 +356,7 @@
 </div>
 <div class="container  flex flex-col   lg:flex-row mx-auto py-2 lg:py-24 lg:my-16 lg:gap-16">
  
-  <div class="m-auto  lg:w-3/5  px-2  ">
+  <div class="m-auto  lg:w-3/5  px-2  fade-in-left-trigger ">
     <h1 class="text-5xl my-1 font-medium text-[#BD9A5F]  lg:font-bold font-['made_mirage'] ">Expertise technique</h1>
     <p class="lg:text-lg py-2  pr-6">Parce chaque domaine d’activité a ses contraintes et ses libertés,
       nous vous proposons des solutions pointues correspondant à votre métier.
@@ -314,7 +367,7 @@
       Votre satisfaction est notre priorité.</p>
     
   </div>
-  <div class="h-66 w-full    lg:w-2/5  rounded-lg ">
+  <div class="h-66 w-full    lg:w-2/5  rounded-lg fade-in-right-trigger ">
     <img  src="./images/Accueil/Acceuil03.png" class=" rounded-2xl"/>
   </div>
 
@@ -422,22 +475,30 @@
 
 </body>
 <script>
-  const swiper = new Swiper('.swiper', {
+  document.addEventListener('DOMContentLoaded', () => {
+    const swiper = new Swiper('.swiper', {
   // Optional parameters
   autoplay: {
    delay: 5000,
+   pauseOnMouseEnter:true,
+
  },
+ observer:true,
   loop: true,
+  observeParents: true,
+
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+    hideOnClick:true,
   },
 
   // And if we need scrollbar
@@ -445,5 +506,52 @@
     el: '.swiper-scrollbar',
   },
 });
+})
+  
+</script>
+<script>
+  // Function to detect when the element is partially in the viewport
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top < (window.innerHeight || document.documentElement.clientHeight) && 
+      rect.bottom >= 0
+    );
+  }
+
+  // Scroll event listener to trigger animations
+  window.addEventListener('scroll', function() {
+    // Apply fade-in-left animation
+    document.querySelectorAll('.fade-in-left-trigger').forEach(function(element) {
+      if (isInViewport(element)) {
+        element.classList.remove('hidden');
+        element.classList.add('fade-in-left');
+      }
+    });
+
+    // Apply fade-in-right animation
+    document.querySelectorAll('.fade-in-right-trigger').forEach(function(element) {
+      if (isInViewport(element)) {
+        element.classList.remove('hidden');
+        element.classList.add('fade-in-right');
+      }
+    });
+
+    // Apply fade-out-left animation when scrolled out of view
+    document.querySelectorAll('.fade-out-left-trigger').forEach(function(element) {
+      if (!isInViewport(element) && element.classList.contains('fade-out-left') === false) {
+        element.classList.remove('hidden');
+        element.classList.add('fade-out-left');
+      }
+    });
+
+    // Apply fade-out-right animation when scrolled out of view
+    document.querySelectorAll('.fade-out-right-trigger').forEach(function(element) {
+      if (!isInViewport(element) && element.classList.contains('fade-out-right') === false) {
+        element.classList.remove('hidden');
+        element.classList.add('fade-out-right');
+      }
+    });
+  });
 </script>
 </html>
